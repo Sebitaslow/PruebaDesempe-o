@@ -25,3 +25,12 @@ Este proyecto contiene una serie de paginas web unidas para que la continuidad d
 ## Objetivo
 
 El objetivo de este proyecto es observar como vamos los coders y que tanto sabemos sobre los temas desarrollados durante el modulo.
+
+# Nombre
+Sebastian Mazo Areiza
+
+# Clan
+Lovelace
+
+# Correo
+mazoosebas@gmail.com
