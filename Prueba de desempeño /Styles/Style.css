@@ -1,0 +1,181 @@
+/*The body of our html */
+body {
+    background-color: black;
+}
+
+/* The header with navigation, an image and an icon */
+header{
+    position: fixed; /* The header remains static thanks to this property */
+    left:0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Image*/
+.profileheader img {
+    width: 5em;
+    height: auto;
+    transition: 0.3s ;
+}
+.profileheader img:hover {
+    transform: scale(1.2);
+}
+/* navigation area */
+.navigation ul {
+    display: flex;
+    gap: 4em;
+    list-style-type: none;
+}
+.navigation a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 120%;
+}
+li {
+    transition: 0.3s;
+}
+.navigation li:hover {
+    transform: translateY(-0.3em);
+}
+
+/* generic profile icon */
+.fa-regular{
+    color: #ffff;
+    font-size: 2em;
+    transition: 0.3s;
+}
+.fa-regular:hover {
+    transform: scale(1.2);
+}
+
+/* separator or stripe */
+.stripe{
+    background-color: #ffff;
+    margin-top: 10%;
+    padding: 0.3vh 1vh;
+}
+
+
+
+/* Main donde se encontraran nuestras secciones*/
+/* Main where our sections will be located */
+main {
+    margin-top: 5%;
+}
+
+
+/* About me section */
+.textaboutme{ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+.catprofile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catprofile img {
+
+    width: 35em;
+    height: auto;
+    border-radius: 100%;
+}
+.textaboutme h1{
+    font-family: "Playfair Display", serif; /* typography */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    color: #ffff;
+    
+}
+.textaboutme p {
+    color:#ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    border-radius: 15px;
+    text-align: justify;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+
+/* Footer end of this page */
+
+footer {
+    background-color: #ffffff;
+    padding: 2em ;
+    margin-top: 2em;
+    text-align: center;
+    
+}
+.fab {
+    color:black;
+    font-size: 20px;
+    display: inline-block; 
+    margin-right: 1em; 
+    margin-left: 1em;
+    transition: 0.2s;
+}
+.fab:hover {
+    color: gray;
+}
+
+
+/* This ensures that all devices have the content adapted to their sizes */
+@media screen and (max-width: 600px) {
+    .textaboutme p {
+    color:#ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 2em; 
+    margin-left: 0;
+    margin-right: 0;
+}  
+.profileheader img {
+    width: 4em;
+    height: auto;
+    
+}
+.navigation a {
+    font-size: 100%;
+}
+.fa-regular{
+    font-size: 30px;
+}
+.catprofile img {
+    width: 15em;
+    height: auto;
+   
+}
+.stripe{
+    margin-top: 20%;
+}
+
+.textaboutme p {
+    font-size: 25px;
+    
+}
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .textaboutme p {
+    color:#ffffff;
+    font-family: "Playfair Display", serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+.catprofile img {
+    width: 15em;
+    height: auto;
+   
+}
+ 
+}
